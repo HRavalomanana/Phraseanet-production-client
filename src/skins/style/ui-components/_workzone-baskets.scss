@@ -187,13 +187,22 @@
     z-index: 14;
     position: relative;
 }
-
+.filter-title {
+    padding-top: 7px;
+    left: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+}
 .basket-filter {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 50px;
+    background:$basket-filter;
+
 
     .filter-item {
         margin: 0 10px 5px;
         display: inline-block;
+        min-width: 65px;
     }
     .checkbox input[type=checkbox], .radio input[type=radio] {
         margin-top: 1px;

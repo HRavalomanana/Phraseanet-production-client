@@ -23,16 +23,16 @@ const basketBrowse = (services) => {
         });
 
         /*left filter*/
-            $('#feedback-list').click(function() {
+            $('#feedback-list input').click(function() {
                 $('.feedbacks-block').toggleClass('hidden');
             });
-            $('#push-list').click(function() {
+            $('#push-list input').click(function() {
                 $('.pushes-block').toggleClass('hidden');
             });
-            $('#basket-list').click(function() {
+            $('#basket-list input').click(function() {
                 $('.baskets-block').toggleClass('hidden');
             });
-            $('#story-list').click(function() {
+            $('#story-list input').click(function() {
                 $('.stories-block').toggleClass('hidden');
             });
     };
