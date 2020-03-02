@@ -482,17 +482,6 @@ const workzoneFacets = services => {
                                     s_facet.data('facetLabel', label);
                                     s_facet.data('facetNegated', facetValue.negated);
 
-                                    /*add selected facet tooltip*/
-                                   // s_facet.attr('title', facetValue.value.value);
-
-                                    s_facet.hover(function () {
-                                        $(buttonsSpan).show();
-
-
-                                    }, function () {
-                                        $(buttonsSpan).hide();
-                                    });
-
                                     $('.fancytree-folder .dataNode', data.node.li).append(newNode);
 
                                 });

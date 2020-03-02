@@ -260,6 +260,11 @@ const search = services => {
                 updateHiddenFacetsListInPrefsScreen();
                 appEvents.emit('search.doAfterSearch');
                 appEvents.emit('search.updateFacetData');
+
+                /*Facet tooltip*/
+                $('.facetFilter-label ,.facetFilter-inverse, .facetFilter-closer').tooltip({
+                    extraClass: 'tooltip_flat'
+                });
             }
         });
         /*script for pagination*/
